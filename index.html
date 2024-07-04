@@ -14,7 +14,7 @@
     <title>Virtuals</title>
 </head>
 <body class="bg-[#121212] w-[100vw] h-[100vh] flex flex-col font-[Poppins] text-[1rem] font-[400]">
-    <header class="w-[100vw] h-[4.1rem] text-[#fff] flex flex-row py-[0.75rem] px-[2.4rem] border-b-[0.06rem] border-b-[#404040cc] static">
+    <header class="w-[100vw] h-[4.1rem] text-[#fff] flex flex-row py-[0.75rem] px-[2.4rem] border-b-[0.06rem] border-b-[#404040cc] fixed bg-[rgba(18,18,18,1)] backdrop-blur-lg border-neutral-700/80">
         <nav class="w-[100vw]">
             <ul class="flex flex-row justify-between items-center w-[100%] text-[0.875rem]">
                 <div class="flex flex-row items-center text-[1.25rem]">
@@ -35,7 +35,7 @@
             </ul>
         </nav>
     </header>
-    <main class="flex flex-col my-[10rem]">
+    <main class="flex flex-col my-[10rem] px-6">
         <section class="flex flex-col w-[100vw]">
             <article>
                 <div>
@@ -51,79 +51,206 @@
                     </a>
                 </div>
             </article>
-            <article class=" flex flex-row px-[3rem] py-[3.5rem] w-[100vw] space-x-[1rem] mt-[2.5rem]">
+            <article class=" flex flex-row py-[3.5rem] w-[100vw] space-x-[1rem] mt-[2.5rem]">
                 <video autoplay loop  src="./assets/video1.mp4" class="w-[50%] border-[0.0625rem] border-solid border-[#c2410c] rounded-[0.5rem]">
                 </video>
                 <video autoplay loop  src="./assets/video2.mp4" class="w-[50%] border-[0.0625rem] border-solid border-[#c2410c] rounded-[0.5rem]">
                 </video>
             </article>
         </section>
-        <section class="flex flex-col w-[100vw] m-auto border-b-[0.06rem] border-b-[#404040cc] border-solid">
-            <article>
-                <p class="text-[#f97316] bg-[#171717] rounded-full py-[0.25rem] px-[0.5rem] text-[0.875rem] font-[500] w-[5rem] text-center m-auto ">FEATURE</p>
+        <section class="flex flex-col w-[100vw]border-b-[0.06rem] border-b-[#404040cc] border-solid"            <p class="text-[#f97316] bg-[#171717] rounded-full py-[0.25rem] px-[0.5rem] text-[0.875rem] font-[500] w-[5rem] text-center m-auto ">FEATURE</p>
                 <h2 class="text-[#ffff] text-[3.75rem] m-auto w-[65.75rem] text-center my-[5rem]">Easily build<span class="bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-orange-800"> your code</span></h2>
             </article>
-            <article class="flex flex-row flex-wrap w-[100vw] mx-[8rem] text-[#ffff]">
+            <article class="flex flex-row flex-wrap justify-between  text-[#ffff]">
                 <div class="flex flex-row flex-nowrap space-x-[1.5rem] w-[23rem] leading-[1.5rem]" >
                     <div>
-                        <img src="assets/features-icon/drag&drop.svg" alt="drag&drop-icon" class="p-[0.5rem] rounded-full bg-[#171717] w-[2.5rem] h-[2.5rem]">
+                        <img src="assets/features-icon/drag&drop.svg" alt="drag-and-drop" class="p-2 mx-6 rounded-full bg-[#171717] w-[2.5rem] h-[2.5rem]">
                     </div>
                     <div>
                         <h3 class="mt-[0.25rem] mb-[1.5rem] text-[1.25rem]">Drag-and-Drop Interface</h3>
-                        <p class="p-[0.5rem] mb-[5rem] text-[#737373] w-[17.48rem] ">Easily design and arrange your VR environments with a user-friendly drag-and-drop interface.</p>
+                        <p class="p-[0.5rem] mb-[5rem] text-[#737373] min-w-[20rem] ">Easily design and arrange your VR environments with a user-friendly drag-and-drop interface.</p>
                     </div>
                 </div>
                 <div class="flex flex-row flex-nowrap space-x-[1.5rem] w-[23rem] leading-[1.5rem]" >
                     <div>
-                        <img src="assets/features-icon/thumprint-icon.svg" alt="thumprint-icon" class="p-[0.5rem] rounded-full bg-[#171717] w-[2.5rem] h-[2.5rem]">
+                        <img src="assets/features-icon/thumprint-icon.svg" alt="thumprint-icon" class="p-[0.5rem] rounded-full bg-[#171717] w-[2.5rem] h-[2.5rem] mx-6">
                     </div>
                     <div>
                         <h3 class="mt-[0.25rem] mb-[1.5rem] text-[1.25rem]">Multi-Platform Compatibility</h3>
-                        <p class="p-[0.5rem] mb-[5rem] text-[#737373] w-[17.48rem] ">Build VR applications that run seamlessly across multiple platforms, including mobile, desktop, and VR headsets.</p>
+                        <p class="p-[0.5rem] mb-[5rem] text-[#737373] min-w-[20rem] ">Build VR applications that run seamlessly across multiple platforms, including mobile, desktop, and VR headsets.</p>
                     </div>
                 </div>
                 <div class="flex flex-row flex-nowrap space-x-[1.5rem] w-[23rem] leading-[1.5rem]" >
                     <div>
-                        <img src="assets/features-icon/security-icon.svg" alt="security-icon" class="p-[0.5rem] rounded-full bg-[#171717] w-[2.5rem] h-[2.5rem]">
+                        <img src="assets/features-icon/security-icon.svg" alt="security-icon" class="p-[0.5rem] rounded-full bg-[#171717] w-[2.5rem] h-[2.5rem] mx-6">
                     </div>
                     <div>
                         <h3 class="mt-[0.25rem] mb-[1.5rem] text-[1.25rem]">Built-in Templates</h3>
-                        <p class="p-[0.5rem] mb-[5rem] text-[#737373] w-[17.48rem] ">Jumpstart your VR projects with a variety of built-in templates for different types of applications and environments.</p>
+                        <p class="p-[0.5rem] mb-[5rem] text-[#737373] w-[17.48rem] min-w-[20rem]">Jumpstart your VR projects with a variety of built-in templates for different types of applications and environments.</p>
                     </div>
                 </div>
                 <div class="flex flex-row flex-nowrap space-x-[1.5rem] w-[23rem] leading-[1.5rem]" >
                     <div>
-                        <img src="assets/features-icon/orange-battery-icon.svg" alt="orange-battery-icon" class="p-[0.5rem] rounded-full bg-[#171717] w-[2.5rem] h-[2.5rem]">
+                        <img src="assets/features-icon/orange-battery-icon.svg" alt="orange-battery-icon" class="p-[0.5rem] rounded-full bg-[#171717] w-[2.5rem] h-[2.5rem] mx-6">
                     </div>
                     <div>
                         <h3 class="mt-[0.25rem] mb-[1.5rem] text-[1.25rem]">Real-Time Preview</h3>
-                        <p class="p-[0.5rem] mb-[5rem] text-[#737373] w-[17.48rem] ">Preview your VR application in real-time as you make changes, allowing for quick iterations and adjustments.</p>
+                        <p class="p-[0.5rem] mb-[5rem] text-[#737373] w-[17.48rem] min-w-[20rem]">Preview your VR application in real-time as you make changes, allowing for quick iterations and adjustments.</p>
                     </div>
                 </div>
                 <div class="flex flex-row flex-nowrap space-x-[1.5rem] w-[23rem] leading-[1.5rem]" >
                     <div>
-                        <img src="assets/features-icon/orange-plug-icon.svg" alt="orange-plug-icon" class="p-[0.5rem] rounded-full bg-[#171717] w-[2.5rem] h-[2.5rem]">
+                        <img src="assets/features-icon/orange-plug-icon.svg" alt="orange-plug-icon" class="p-[0.5rem] rounded-full bg-[#171717] w-[2.5rem] h-[2.5rem] mx-6">
                     </div>
                     <div>
                         <h3 class="mt-[0.25rem] mb-[1.5rem] text-[1.25rem]">Collaboration Tools</h3>
-                        <p class="p-[0.5rem] mb-[5rem] text-[#737373] w-[17.48rem] ">Work together with your team in real-time on VR projects, enabling seamless collaboration and idea sharing.</p>
+                        <p class="p-[0.5rem] mb-[5rem] text-[#737373] w-[17.48rem] min-w-[20rem]">Work together with your team in real-time on VR projects, enabling seamless collaboration and idea sharing.</p>
                     </div>
                 </div>
                 <div class="flex flex-row flex-nowrap space-x-[1.5rem] w-[23rem] leading-[1.5rem]" >
                     <div>
-                        <img src="assets/features-icon/orange-globe-icon.svg" alt="orange-globe-icon" class="p-[0.5rem] rounded-full bg-[#171717] w-[2.5rem] h-[2.5rem]">
+                        <img src="assets/features-icon/orange-globe-icon.svg" alt="orange-globe-icon" class="p-[0.5rem] rounded-full bg-[#171717] w-[2.5rem] h-[2.5rem] mx-6">
                     </div>
                     <div>
                         <h3 class="mt-[0.25rem] mb-[1.5rem] text-[1.25rem]">Analytics Dashboard</h3>
-                        <p class="p-[0.5rem] mb-[5rem] text-[#737373] w-[17.48rem] ">Gain valuable insights into user interactions and behavior within your VR applications with an integrated analytics dashboard.</p>
+                        <p class="p-[0.5rem] mb-[5rem] text-[#737373] w-[17.48rem] min-w-[20rem]">Gain valuable insights into user interactions and behavior within your VR applications with an integrated analytics dashboard.</p>
                     </div>
                 </div>
             </article>
         </section>
         <section class="mt-[5rem] w-[100vw]">
-            <h4 class="text-[#ffff] text-[3.75rem] m-auto w-[65.75rem] text-center my-[1.5rem]">Accelerate your<span class="bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-orange-800"> coding workflow.</span></h4>
-            <article>
-                <img src="assets/code.jpg" alt="pages of codes" class="w-[50%] px-[5rem]">
+            <h4 class="text-[#ffff] text-[3.75rem] m-auto w-[65.75rem] text-center mt-[1.5rem]">Accelerate your<span class="bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-orange-800"> coding workflow.</span></h4>
+            <article class="flex flex-row">
+                <div class="w-[50%] pl-[5rem]">
+                    <img src="assets/code.jpg" alt="pages of codes">
+                </div>
+                <div class="w-[50%] pt-12">
+                    <div class="flex flex-row text-[#fff] mb-12">
+                        <div class="bg-[#171717] mx-[1.5rem] h-10 w-10 p-2 rounded-full">
+                            <img src="assets/tick.svg" alt="item-number-1" class="w-[2.5rem]">
+                        </div>
+                        <div>
+                            <h5 class="mt-[0.25rem] mb-[0.5rem] text-[1.25rem]">Code merge made easy</h5>
+                            <p class="text-[#737373]">Track the performance of your VR apps and gain insights into user behavior.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row text-[#fff] mb-12">
+                        <div class="bg-[#171717] mx-[1.5rem] h-10 w-10 p-2 rounded-full">
+                            <img src="assets/tick.svg" alt="item-number-1" class="w-[2.5rem]">
+                        </div>
+                        <div>
+                            <h5 class="mt-[0.25rem] mb-[0.5rem] text-[1.25rem]">Review code without worry</h5>
+                            <p class="text-[#737373]">Track the performance of your VR apps and gain insights into user behavior.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row text-[#fff] mb-12">
+                        <div class="bg-[#171717] mx-[1.5rem] h-10 w-10 p-2 rounded-full">
+                            <img src="assets/tick.svg" alt="item-number-1" class="w-[2.5rem]">
+                        </div>
+                        <div>
+                            <h5 class="mt-[0.25rem] mb-[0.5rem] text-[1.25rem]">AI Assistance to reduce time</h5>
+                            <p class="text-[#737373]">Track the performance of your VR apps and gain insights into user behavior.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row text-[#fff] mb-12">
+                        <div class="bg-[#171717] mx-[1.5rem] h-10 w-10 p-2 rounded-full">
+                            <img src="assets/tick.svg" alt="item-number-1" class="w-[2.5rem]">
+                        </div>
+                        <div>
+                            <h5 class="mt-[0.25rem] mb-[0.5rem] text-[1.25rem]">Share work in minutes</h5>
+                            <p class="text-[#737373]">Track the performance of your VR apps and gain insights into user behavior.</p>
+                        </div>
+                    </div>
+                </div> 
+            </article>
+        </section>
+        <section class="text-[#fff] flex flex-col">
+            <h6 class="my-[2rem] text-[3.75rem] m-auto font-[400] w-fit">Pricing</h6>
+            <article class="flex flex-row flex-wrap px-[2rem``]">
+                <div class="w-[30%] m-[0.5rem] p-[2.5rem] rounded-[0.75rem] border-[#404040]  border-[0.0625rem] border-solid">
+                    <h2 class="mb-[2rem] text-[2.25rem]">Free</h2>
+                    <p class="mb-[2rem]">
+                        <span class="text-[3rem]">$0</span>
+                        <span class="text-[#a3a3a3] text-[]">/Month</span>
+                    </p>
+                    <ul class="mb-[5rem]">
+                        <li class="flex flex-row flex-nowrap space-x-[0.5rem] mt-[2rem]">
+                            <img src="assets/white-tick.svg" alt="item-number-1">
+                            <span>Private board sharing</span>
+                        </li>
+                        <li class="flex flex-row flex-nowrap space-x-[0.5rem] mt-[2rem]">
+                            <img src="assets/white-tick.svg" alt="item-number-1">
+                            <span>5 Gb Storage</span>
+                        </li>
+                        <li class="flex flex-row flex-nowrap space-x-[0.5rem] mt-[2rem]">
+                            <img src="assets/white-tick.svg" alt="item-number-1">
+                            <span>Web Analytics</span>
+                        </li>
+                        <li class="flex flex-row flex-nowrap space-x-[0.5rem] mt-[2rem]">
+                            <img src="assets/white-tick.svg" alt="item-number-1">
+                            <span>Private Mode</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="  border-[#7c2d12]  border-[0.0625rem] border-solid rounded-[0.5rem] cursor-pointer py-[1.25rem] hover:bg-[#7c2d12]">
+                        <button class="w-[14.958rem] text-[1.25rem] m-auto ">Subscribe</button>
+                    </a>
+                </div>
+                <div class="w-[30%] m-[0.5rem] p-[2.5rem] rounded-[0.75rem] border-[#404040]  border-[0.0625rem] border-solid">
+                    <h2 class="mb-[2rem] text-[2.25rem]">Free</h2>
+                    <p class="mb-[2rem]">
+                        <span class="text-[3rem]">$0</span>
+                        <span class="text-[#a3a3a3] text-[]">/Month</span>
+                    </p>
+                    <ul class="mb-[5rem]">
+                        <li class="flex flex-row flex-nowrap space-x-[0.5rem] mt-[2rem]">
+                            <img src="assets/white-tick.svg" alt="item-number-1">
+                            <span>Private board sharing</span>
+                        </li>
+                        <li class="flex flex-row flex-nowrap space-x-[0.5rem] mt-[2rem]">
+                            <img src="assets/white-tick.svg" alt="item-number-1">
+                            <span>5 Gb Storage</span>
+                        </li>
+                        <li class="flex flex-row flex-nowrap space-x-[0.5rem] mt-[2rem]">
+                            <img src="assets/white-tick.svg" alt="item-number-1">
+                            <span>Web Analytics</span>
+                        </li>
+                        <li class="flex flex-row flex-nowrap space-x-[0.5rem] mt-[2rem]">
+                            <img src="assets/white-tick.svg" alt="item-number-1">
+                            <span>Private Mode</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="  border-[#7c2d12]  border-[0.0625rem] border-solid rounded-[0.5rem] cursor-pointer py-[1.25rem] hover:bg-[#7c2d12]">
+                        <button class="w-[14.958rem] text-[1.25rem] m-auto ">Subscribe</button>
+                    </a>
+                </div>
+                <div class="w-[30%] m-[0.5rem] p-[2.5rem] rounded-[0.75rem] border-[#404040]  border-[0.0625rem] border-solid">
+                    <h2 class="mb-[2rem] text-[2.25rem]">Free</h2>
+                    <p class="mb-[2rem]">
+                        <span class="text-[3rem]">$0</span>
+                        <span class="text-[#a3a3a3] text-[]">/Month</span>
+                    </p>
+                    <ul class="mb-[5rem]">
+                        <li class="flex flex-row flex-nowrap space-x-[0.5rem] mt-[2rem]">
+                            <img src="assets/white-tick.svg" alt="item-number-1">
+                            <span>Private board sharing</span>
+                        </li>
+                        <li class="flex flex-row flex-nowrap space-x-[0.5rem] mt-[2rem]">
+                            <img src="assets/white-tick.svg" alt="item-number-1">
+                            <span>5 Gb Storage</span>
+                        </li>
+                        <li class="flex flex-row flex-nowrap space-x-[0.5rem] mt-[2rem]">
+                            <img src="assets/white-tick.svg" alt="item-number-1">
+                            <span>Web Analytics</span>
+                        </li>
+                        <li class="flex flex-row flex-nowrap space-x-[0.5rem] mt-[2rem]">
+                            <img src="assets/white-tick.svg" alt="item-number-1">
+                            <span>Private Mode</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="  border-[#7c2d12]  border-[0.0625rem] border-solid rounded-[0.5rem] cursor-pointer py-[1.25rem] hover:bg-[#7c2d12]">
+                        <button class="w-[14.958rem] text-[1.25rem] m-auto ">Subscribe</button>
+                    </a>
+                </div>
             </article>
         </section>
     </main>
